@@ -11,7 +11,7 @@ class StartingPoint extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return StateBuilder(
-      models: [StatesManager.counterModel],
+      models: [StatesManager.states],
       builder: (statesBuilderContext, rm) {
         return MainRoute.getDefaultLayout();
       },

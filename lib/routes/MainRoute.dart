@@ -12,16 +12,16 @@ class MainRoute {
         body: Center(
           child: Column(
             children: [
-              Text("Counter : ${StatesManager.counterModel.counter}"),
+              Text("Counter : ${StatesManager.states.counter}"),
               RaisedButton(
                 onPressed: () {
-                  StatesManager.counterModel.change(1);
+                  StatesManager.states.change(1);
                 },
                 child: Text("+1"),
               ),
               RaisedButton(
                 onPressed: () {
-                  StatesManager.counterModel.change(-1);
+                  StatesManager.states.change(-1);
                 },
                 child: Text("-1"),
               ),
